@@ -6,6 +6,7 @@
 package cliente.DTO;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
@@ -14,6 +15,15 @@ import java.io.Serializable;
 public class SensorDTO implements Serializable{
     private int numHabitacion;
     private IndicadorClinicoDTO indicador;
+    private Date date;
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Date getDate() {
+        return date;
+    }
 
     public SensorDTO() {
     }

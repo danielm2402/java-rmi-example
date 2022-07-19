@@ -5,6 +5,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Date;
 import servidor.DTO.SensorDTO;
 
 public class Conexion_cliente_servidor {
