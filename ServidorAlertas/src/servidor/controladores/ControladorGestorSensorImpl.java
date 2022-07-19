@@ -30,8 +30,7 @@ public class ControladorGestorSensorImpl extends UnicastRemoteObject implements 
         int contarIndicadores = 0;
         
         if(objSensor.getIndicador().getFrecuenciaCardiaca() <= 0 || objSensor.getIndicador().getFrecuenciaRespiratoria()<= 0 || objSensor.getIndicador().getSaturacionOxigeno()<=0 || objSensor.getIndicador().getTemperatura() <=0 || objSensor.getIndicador().getTensionArterial().getPresionSistolica() <= 0 || objSensor.getIndicador().getTensionArterial().getPresionDiastolica() <= 0){
-            servidorLog.peticion_respuesta();
-            this.servidorLog.peticion_respuesta();
+            this.servidorLog.peticion_respuesta(objSensor);
             //Aqui se va a llamar al cliente para conectar al servidor de logs. y tambien incluir fecha (actual del pc) capturar el errore y mandarlo,
             //servidorLog.enviarFalla("El ritmo cardiaco fallo"); //Programar Metodo
             
